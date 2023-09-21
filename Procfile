@@ -1,2 +1,3 @@
-web: gunicorn --pythonpath core core.wsgi:application
-release: python manage.py migrate --noinput
+web: gunicorn core.wsgi:application
+
+release: django-admin migrate --no-input && django-admin collectstatic --no-input
