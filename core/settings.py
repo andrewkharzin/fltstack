@@ -69,6 +69,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
             ],
         },
+
     },
 ]
 
@@ -88,9 +89,7 @@ DATABASES = {
         'PASSWORD': '19831112',
         'HOST': 'skyjets.space',
         'PORT': '5432',
-        'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
-        }
+
     }
 }
 
